@@ -670,6 +670,9 @@
                 }
                 &.active{
                     height: 100%;
+                    &::after {
+                      display: none;
+                    }
                 }
             }
             .js-btn-loadmore {

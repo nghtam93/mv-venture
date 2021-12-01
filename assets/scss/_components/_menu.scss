@@ -137,7 +137,11 @@ $font-color: #fff;
 
 /*Menu custom*/
 .modal-open{overflow:hidden;}
-
+body.modal-open{
+    .header{
+        background: #151134;
+    }
+}
 .nav__mobile{
     display:block;
     position:fixed;
