@@ -9,7 +9,8 @@
 		max-width: 1600px;
 	}
 	&.is-active{
-		background: #151134;
+		background: rgba(21, 17, 52, .85);
+    	backdrop-filter: blur(2px);
 		// animation:stuckMoveDown .6s;
 	}
 	.logo{
