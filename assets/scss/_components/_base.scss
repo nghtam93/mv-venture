@@ -72,6 +72,9 @@ a {
 strong{
     font-weight: 700;
 }
+.wrapper{
+    overflow: hidden;
+}
 .videoWrapper{position:relative;padding-bottom:56.25%; /* 16:9 */height:0;}
 .videoWrapper iframe,.videoWrapper object,.videoWrapper embed,.videoWrapper video{position:absolute;top:0;left:0;width:100%;height:auto;}
 

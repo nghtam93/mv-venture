@@ -379,6 +379,9 @@
         .news__slider{
             padding-bottom: 40px;
         }
+        .slick-arrow {
+            top: calc(50% - 40px);
+        }
         .el__box{
             + .el__box{
                 margin-top: 100px;
