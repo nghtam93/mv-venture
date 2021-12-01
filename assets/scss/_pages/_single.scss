@@ -35,41 +35,6 @@
 }
 .archive__content{
 	padding-bottom: 90px;
-	.nav__list{
-		height: 42px;
-		overflow-x: auto;
-		margin-bottom: 16px;
-		display: flex;
-		flex-wrap: nowrap;
-
-		&::-webkit-scrollbar {
-		  display: none;
-		}
-
-		li{
-			flex: 0 0 auto;
-			margin-bottom: 16px;
-			&:not(:last-child){
-				margin-right: 24px;
-			}
-			&:hover, &.active{
-				a{
-					color: #06A95B;
-				}
-			}
-		}
-		a{
-			display: block;
-			font-weight: bold;
-			font-size: 17.5px;
-			color: #fff;
-			transition: all .5s;
-			white-space: normal;
-			&:hover{
-				color: #06A95B;
-			}
-		}
-	}
 	.list__item{
 		&__title{
 			position: relative;
