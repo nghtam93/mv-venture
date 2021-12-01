@@ -38,17 +38,16 @@ $(document).ready(function(){
 
     $('a[href^="#"]').bind("click", jump);
 
-        if (location.hash){
-            setTimeout(function(){
-                $('html, body').scrollTop(0).show();
-                jump();
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
 
-            }, 0);
-        }else{
-            $('html, body').show();
-        }
+        }, 0);
+    }else{
+        $('html, body').show();
+    }
 
-    })
 
     $(document).on('click', 'a[href^="#"], a[href*=".html#"]', function (e) {
 
