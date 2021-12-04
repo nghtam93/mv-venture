@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     var header_sticky=$("header.-fix")
 
     $(window).scroll(function(){
@@ -24,6 +23,8 @@ $(document).ready(function(){
     // Click id a
     var jump=function(e)
     {
+        console.log(111)
+        $(document).off("scroll");
         if (e){
            e.preventDefault();
            var target = $(this).attr("href");
@@ -31,9 +32,11 @@ $(document).ready(function(){
            var target = location.hash;
         }
 
-        $('html,body').animate({scrollTop: $(target).offset().top},2000,function(){
-           location.hash = target;
+        $('html, body').stop().animate({
+            'scrollTop': $(target).offset().top
         });
+
+        location.hash = target;
     }
 
     $('a[href^="#"]').bind("click", jump);
@@ -154,8 +157,6 @@ $(document).ready(function(){
         $(window).scroll(function(){
             $(this).scrollTop()>share_offset?single_share.addClass("is-active"):single_share.removeClass("is-active")
         })
-
-        console.log(single_share)
     }
 
 });
