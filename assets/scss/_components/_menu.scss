@@ -136,8 +136,20 @@ $font-color: #fff;
 }
 
 /*Menu custom*/
-.modal-open{overflow:hidden;}
-body.modal-open{
+.menumb-open{overflow:hidden;}
+@media (max-width: 575px){
+    .menumb-open::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: #151134;
+    }
+}
+body.menumb-open{
     .header{
         background: rgba(21,17,52,0.85);
     }
