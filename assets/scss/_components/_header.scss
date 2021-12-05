@@ -11,6 +11,7 @@
 	&.is-active{
 		background: rgba(21, 17, 52, .85);
     	backdrop-filter: blur(2px);
+    	box-shadow: 0px 0px 12px rgba(16, 122, 61, .5);
 		// animation:stuckMoveDown .6s;
 	}
 	.logo{
@@ -63,21 +64,15 @@
 
 /* Fix WP*/
 .admin-bar{
-	.header.-fix, .nav__mobile{
-	    top: 32px;
-	}
-	@media (max-width: 782px) {
-	    .header.-fix, .nav__mobile{
-	        top: 46px;
-	    }
-	}
-	@media (max-width: 767px) {
-	    .header.-fix{
-	        top: 0;
-	    }
+	@media (max-width: 991px) {
 	    #wpadminbar{
 	        display: none;
 	    }
+	}
+	@media (min-width: 992px) {
+		.header.-fix, .nav__mobile{
+		    top: 32px;
+		}
 	}
 }
 

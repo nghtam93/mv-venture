@@ -1,9 +1,14 @@
 $(document).ready(function(){
-    var header_sticky=$("header.-fix")
 
+    /*----Get Header Stick ---*/
+    var header_sticky=$("header.-fix")
     $(window).scroll(function(){
         $(this).scrollTop()>5?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
     })
+
+    $( window ).on( "load", function() {
+        (header_sticky.offset().top >5) ? header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
+    });
 
 
     /*----Get Header Height ---*/
@@ -157,7 +162,14 @@ $(document).ready(function(){
         $(window).scroll(function(){
             $(this).scrollTop()>share_offset?single_share.addClass("is-active"):single_share.removeClass("is-active")
         })
+
+        Fancybox.bind("a[href$='.jpg'], a[href$='.png'], a[href$='.jpeg'], a[href$='.gif']", {
+          groupAttr: false,
+        });
     }
+
+
+
 
 });
 

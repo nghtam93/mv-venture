@@ -120,10 +120,9 @@
     	position: relative;
     }
     h1{
-    	max-width: 800px;
 		font-weight: 600;
-		font-size: 34px;
-		line-height: 1.6;
+		font-size: 48px;
+		line-height: 57px;
 		text-align: center;
 		color: #FFFFFF;
 		margin: 0 auto 30px;
@@ -182,7 +181,6 @@
 	}
 }
 .single__tag{
-	margin-bottom: 60px;
 	a{
 		display: inline-block;
 		text-transform: uppercase;
@@ -197,6 +195,7 @@
 	}
 }
 .related__post{
+	margin-top: 60px;
 	.el__header{
 		&__title{
 			position: relative;
