@@ -1,0 +1,85 @@
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width:100%;
+	z-index: 10;
+	.container{
+		max-width: 1600px;
+	}
+	&.is-active{
+		background: rgba(21, 17, 52, .85);
+    	backdrop-filter: blur(2px);
+    	box-shadow: 0px 0px 12px rgba(16, 122, 61, .5);
+		// animation:stuckMoveDown .6s;
+	}
+	.logo{
+		margin-bottom: 0;
+		transition: opacity .5s;
+		img{
+			width: auto;
+			max-width: 122px;
+			max-height: 75px;
+		}
+	}
+	&__support{
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 24px;
+		color: #FFFFFF;
+		a{
+			color: #fff;
+			display: flex;
+			align-items: center;
+		}
+		img{
+			margin-right: 10px;
+			width: auto;
+			max-height: 30px;
+		}
+	}
+	@media (max-width: 1199px){
+		&__support{
+			display: none;
+		}
+	}
+	@media (max-width: 991px){
+		padding: 10px 0;
+
+		.logo {
+		    flex-grow: 1;
+		    img{
+		    	max-height: 56px;
+		    }
+		}
+	}
+
+	@media (max-width: 575px){
+
+	}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
+}
+
+/* Fix WP*/
+.admin-bar{
+	@media (max-width: 991px) {
+	    #wpadminbar{
+	        display: none;
+	    }
+	}
+	@media (min-width: 992px) {
+		.header.-fix, .nav__mobile{
+		    top: 32px;
+		}
+	}
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    top: 19px;
+    right: 0;
+}
